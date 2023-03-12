@@ -18,11 +18,14 @@
 body {
     background-image: url("../assets/img/Background.jpg");
     background-size: cover;
-    width: 100%;
-    height: auto;
     background-repeat: no-repeat;
-    background-position: center center;
-    
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.blurred{
+    backdrop-filter: blur(3px);
+    height: 100%;
 }
 
 /*el contenedor del logo de la asociacion de heladeros*/
@@ -38,15 +41,12 @@ body {
     font-family: Pattaya;
     font-size: 6rem;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
-    
 }
 /*la clase del logo de la heladeria*/
 .logo{
     display: inline-block;
     width: 200px;
     height: 50%;
-    margin-top: auto;
-    margin-right: 0;
 }
 
 /*el div que contiene las propiedades de la lista de navegacion*/
@@ -60,16 +60,6 @@ body {
     
 }
 
-.nav-link bg-index{
-    background-color: rgb(226, 163, 45);
-    color: black;
-}
-
-.nav-link active{
-    background-color:rgb(226, 163, 45);
-}
-
-
 /*el parrafo de inicio de index, se puede mejorar pero no se me ocurre como*/
 .parrafoIndex{
     font-family: Lato;
@@ -77,11 +67,33 @@ body {
     text-align: center;
 }
 /*el tamaño de cada uno de los trofeos, la idea es acomodarlo con flexbox y que queden uno al lado del otro */
-.trofeos{
-    display: inline-block;
-    width: 150px;
-    height: 50%;
+
+.trofeos {
+    margin-top: 50px;
+    text-align: center;
 }
+
+.trofeos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trofeo-card {
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.trofeo-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.trofeo-text {
+    padding: 10px;
+}
+
 
 /*el footer de la frase de abajo*/
 .footer{
@@ -98,7 +110,12 @@ body {
     
 }
 
-.sabores{
-    width: 150px;
-    height: 50%    ;
+
+.carousel-item{
+    height: 75vh;
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
 }
