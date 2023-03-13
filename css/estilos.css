@@ -31,7 +31,7 @@ body {
 /*el contenedor del logo de la asociacion de heladeros*/
 .contenedorLogo{
     display: inline-block;
-    width: 190px;
+    width: 150px;
     height: 70%;
     margin-top: 0;
 }
@@ -46,7 +46,15 @@ body {
 .logo{
     display: inline-block;
     width: 200px;
-    height: 50%;
+    height: 100%;
+    margin-left: 100px;
+}
+
+.headerNombreyLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /*el div que contiene las propiedades de la lista de navegacion*/
@@ -59,6 +67,12 @@ body {
     font-size: 1.8rem;
     
 }
+
+.nav-pills .nav-link.active{
+    background-color: aqua;
+}
+
+
 
 /*el parrafo de inicio de index, se puede mejorar pero no se me ocurre como*/
 .parrafoIndex{
