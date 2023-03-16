@@ -33,141 +33,51 @@
             </nav>
                 <div>
         </header>
-    <main>
-
-        <!--
-            ESTA SECCION COMO NO VIMOS FORM COMPLETO TODAVIA NO SABIA SI HABIA QUE COMPLETARLA O NO
-            
-            
-            utilizamos un div que contiene al formulario-->
-        <div>
-            <!--la estructura basica del formulario se compone de :
-            form: es la etiqueta que engloba nuestro formulario
-            label: sirve para escribir el nombre del campo a rellenar
-            input: sirve para crear un campo que permitira que el usuario complete datos
-            button: crea un boton  -->
-             <!--etiqueta formulario, en el atributo action se debe colocar un documento que va a recibir los datos que vamos a enviar-->
+    <main class="container-fluid justify-content">
+        <section class="formularioContacto border border-2 rounded bg-opacity-75">
+            <div>
             <form action="validar.html">
-                 <!--utilizamos un div que contiene cada etiqueta label y cada etiqueta input-->
                 <div>
-                     <!--El atributo for del label debe tener el id del input eso hace que se relacionen-->
                     <label for="nombre"> Nombre Completo </label>
-                    <!--atributos de input:
-                    id= debe tener un codigo unico e irrepetible, no podemos ponerlo en otra etiqueta, nos servira para css
-                    type= indicaremos que tipo de dato tendra el input
-                            en type podemos poner
-                            button se comporta igual que una etiqueta button
-                            color: el usuario va a poder elegir un color
-                            date: introducir una fecha
-                            time: se puede introducir una hora
-                            datetime: esta deprecado,no funciona en el navegador
-                            datetime-local: se puede seleccionar fecha y hora, pero en firefox no funciona
-                            email: se puede introducir un mail
-                            hidden: un campo que puede tener informacion pero esta oculto para el usuario
-                            month : podra seleccionar un mes
-                            number : se utiliza para ingresar valores numericos
-                            password: se ingresan contraseñas
-                            range: establece un rango
-                            reset : limpia el formulario
-                            search: se utiliza para las barras de busqueda
-                            submit: se utiliza para enviar el formulario 
-                            tel: se utiliza para introducir numeros telefonicos
-                            text: valor por defecto
-                           
-                            url: se pueden introducir urls
-                            week: introduce una semana del año
-                            radio: seleccionador excluyente
-                            checkbox : seleccionador incluyente
-                            
-                    step: permite establecer el rango de intervalos en los que se pueden mover los valores de los los input de fecha y numéricos.
-                    min y max : se pueden utilzar en los siguientes types de input number, range, date, datetime-local, month, time y week.
-                    checked : atributo booleano que sirve para marcar como seleccionado un input type checked o radio
-                    value: dato que ingresa el usuario, se puede setear previamente en el html
-                    name: atributo obligatorio que servira para enviar la informacion del campo al servidor 
-                    class: atributo para luego darle estilos al elemento de html
-                    placeholder: da una pista o sugerencia de que completar al usuario
-                    required: hace que un campo del formulario sea obligatorio
-                    readonly: hace que un campo sea de solo lectura y aunque el campo este readonly se envia la info igual al servidor
-                    maxlenght- minlenght: establece el minimo y maximo de caracteres de un campo tipo texto
-                    disabled : desactiva el campo y no se podra hacer foco en él ni se enviara al servidor
-                    autofocus: cuando se carga el formulario se hace foco en ese campo
-                    autocomplete: especifica si un formulario o un campo de entrada debe tener el autocompletado activado o desactivado.
-                        funciona en  types: text, search, url, tel, email, password, datepickers, range, y color.
-                        tambien se puede utilizar en en form de la siguiente forma:
-                        <form action="validar.html"  autocomplete="on"> 
-
-
-                    -->
                     <input id ="nombre" name="nombre" type="text" placeholder="Ingrese Nombre y Apellido..." minlength="3" maxlength="50" required autofocus autocomplete="off">
                     
                 </div>
-               <div>
-                    <label for="mail">Mail</label>
+            <div>
+                    <h3><label for="mail">Mail</label></h3>
                     <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
-                 </div>
+                </div>
                 <div>
                             </div>
                 <fieldset>
-                    <legend>Ingrese los siguientes Datos</legend>
-                    <div>
-                        <label for="fnac">Fecha de Nacimiento</label>
-                        <input id="fnac" name="fecha_nac" type="date" required>
-                        <input id="hnac" name="hora_nac" type="time" required>
-    
-                    </div>
                         
                     </div>
-            
-
                 </fieldset>
-                                
                 <fieldset>
-                    <legend>Elementos seleccionables</legend>
                     <div>
                         <label for="prov">Indique Motivo</label>
                         <select name="Motivo" id="prov">
                             <option value="Comentario">Comentario</option>
                             <option value="Busco Trabajo" selected>Busco Trabajo</option>
                             <option value="Abrir Sucursal">Quiero Abrir una Sucursal</option>
-                            
-                          
                         </select>
-
                     </div>
-                                          
-                        </select>
-
                     </div>
                     
-
                 </fieldset>
                 <fieldset>
-                    <legend>Indique un Comentario</legend>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
-                    <br>
-                    <input id="no_modifica" name="no_modifica" type="text" value="No se puede modificar" readonly >
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Dejanos tu Comentario"></textarea>
+                    
                 </fieldset>
-
                 <div>
                     <fieldset>
-                        <legend>Grabe o limpie el formulario</legend>
-                        <input type="button" value="Cancelar">
-                        <button>Prueba</button>
                         <input id="enviar" type="submit" value="Enviar">
-                        <input id="reset" type="reset" value="Limpiar">
                     </fieldset>
                 </div>
-                
-
-
             </form>
-
-
         </div>
-
-
+    </section>
     </main>
-    <footer class="footer"> <!--el footer con las redes en la parte inferior izquierda, se puede mejorar-->
+    <footer class="footer container-fluid d-flex justify-content-end"> <!--el footer con las redes en la parte inferior izquierda, se puede mejorar-->
         <div>
             <p>desde 1995  Todos los helados reservados©</p>
         </div>
@@ -177,11 +87,10 @@
             </a>
             <a href="https://www.instagram.com" target="_blank">
                 <img src="../assets/img/instagram.png" alt="Instagram de Don Enrique">
-              </a>
+                </a>
 
         </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-    
