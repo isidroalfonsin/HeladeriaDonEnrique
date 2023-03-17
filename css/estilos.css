@@ -93,13 +93,15 @@ h3{
 
 .parrafoIndexCompleto{
     background-color: rgba(241, 237, 237, 0.897);
-    
+    padding: 10px;
 }
 /*el tamaño de cada uno de los trofeos, la idea es acomodarlo con flexbox y que queden uno al lado del otro */
 
 .trofeosIndex{
     margin: auto;
     margin-top: 50px;
+    background-size: cover;
+    
 }
 .trofeos-container {
     display: flex;
@@ -110,6 +112,10 @@ h3{
 .card{
     background-color: rgba(241, 237, 237, 0.897);
 }
+.card-img-top{
+        width: 100%;
+    }
+
 
 .trofeo-text {
     padding: 10px;
@@ -145,4 +151,24 @@ h3{
 .formularioContacto{
     display: flex;
     background-color: rgba(241, 237, 237, 0.897);
+}
+
+@media (max-width: 1160px) {
+
+    .nombre{
+        font-size: 4.5rem;
+    }
+
+}
+
+@media (max-width: 1000px){
+
+    .nombre{
+        font-size: 3.9rem;
+    }
+    .logo{
+        width: 30%;
+        height: 90%;
+        margin-left: 10px;
+    }
 }
