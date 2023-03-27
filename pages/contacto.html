@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="formulario de contacto para poder comunicarse con alguna de las sucursales de la heladeria">
+        <meta name="keywords" content="Heladeria,contacto,formulario">
         <title>Contacto - Helados Don Enrique</title>
         <link rel="shortcut icon" href="../icono.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -34,47 +36,29 @@
                 <div>
         </header>
     <main class="container-fluid justify-content">
+        <h1>Contacto</h1>
+        <div class="row">
+            <div class="col">
         <section class="formularioContacto border border-2 rounded bg-opacity-75">
-            <div>
-            <form action="validar.html">
-                <div>
-                    <label for="nombre"> Nombre Completo </label>
-                    <input id ="nombre" name="nombre" type="text" placeholder="Ingrese Nombre y Apellido..." minlength="3" maxlength="50" required autofocus autocomplete="off">
-                    
+            <form class="row">
+                <div class="mb-3">
+                <h2>Dejanos tu comentario o consulta</h2>
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Puede elegir si recibir promociones y ofertas</div>
                 </div>
-            <div>
-                    <h3><label for="mail">Mail</label></h3>
-                    <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
+                <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="exampleInputName1">
                 </div>
-                <div>
-                            </div>
-                <fieldset>
-                        
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div>
-                        <label for="prov">Indique Motivo</label>
-                        <select name="Motivo" id="prov">
-                            <option value="Comentario">Comentario</option>
-                            <option value="Busco Trabajo" selected>Busco Trabajo</option>
-                            <option value="Abrir Sucursal">Quiero Abrir una Sucursal</option>
-                        </select>
-                    </div>
-                    </div>
-                    
-                </fieldset>
-                <fieldset>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Dejanos tu Comentario"></textarea>
-                    
-                </fieldset>
-                <div>
-                    <fieldset>
-                        <input id="enviar" type="submit" value="Enviar">
-                    </fieldset>
+                <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Comentario</label>
+                <textarea name="" id="exampleInputComentario1" cols="30" rows="5"></textarea>
                 </div>
+                <button type="submit" class="btn btn-primary">Enviar Comentario</button>
             </form>
         </div>
+    </div>
     </section>
     </main>
     <footer class="footer container-fluid d-flex justify-content-end"> <!--el footer con las redes en la parte inferior izquierda, se puede mejorar-->
