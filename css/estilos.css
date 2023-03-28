@@ -1,4 +1,49 @@
 @charset "UTF-8";
+.nombre {
+  display: inline-block;
+  font-family: Pattaya;
+  font-size: 6rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  display: inline-block;
+  width: 200px;
+  height: 100%;
+  margin-left: 100px;
+}
+
+.headerNombreyLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1160px) {
+  .nombre {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 1000px) {
+  .nombre {
+    font-size: 3.9rem;
+  }
+  .logo {
+    width: 30%;
+    height: 90%;
+    margin-left: 10px;
+  }
+}
+.footer {
+  font-family: Pattaya;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.footer .enlaces {
+  float: right;
+}
+
 @font-face {
   font-family: "Lato";
   src: url(../assets/fonts/Lato-Regular.ttf);
@@ -27,19 +72,7 @@ body {
   height: 100%;
 }
 
-h1 {
-  font-family: Pattaya;
-  display: flex;
-  justify-content: center;
-}
-
-h2 {
-  font-family: Pattaya;
-  display: flex;
-  justify-content: center;
-}
-
-h3 {
+.titulo, h3, h2, h1 {
   font-family: Pattaya;
   display: flex;
   justify-content: center;
@@ -51,29 +84,6 @@ h3 {
   width: 150px;
   height: 70%;
   margin-top: 0;
-}
-
-/*la clase del nombre de la heladeria, iria mas al medio*/
-.nombre {
-  display: inline-block;
-  font-family: Pattaya;
-  font-size: 6rem;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-}
-
-/*la clase del logo de la heladeria*/
-.logo {
-  display: inline-block;
-  width: 200px;
-  height: 100%;
-  margin-left: 100px;
-}
-
-.headerNombreyLogo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 /*el div que contiene las propiedades de la lista de navegacion*/
@@ -88,7 +98,7 @@ h3 {
   background-color: rgba(241, 237, 237, 0.897);
 }
 
-/*el parrafo de inicio de index, se puede mejorar pero no se me ocurre como*/
+/*el parrafo de inicio de index*/
 .parrafoIndex {
   font-family: Lato;
   font-size: 2rem;
@@ -100,7 +110,7 @@ h3 {
   padding: 10px;
 }
 
-/*el tamaño de cada uno de los trofeos, la idea es acomodarlo con flexbox y que queden uno al lado del otro */
+/*el tamaño de cada uno de los trofeos */
 .trofeosIndex {
   margin: auto;
   margin-top: 50px;
@@ -123,19 +133,6 @@ h3 {
 
 .trofeo-text {
   padding: 10px;
-}
-
-/*el footer de la frase de abajo*/
-.footer {
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-  font-family: Pattaya;
-  font-size: 1.2rem;
-}
-
-/*los enlaces de las redes sociales*/
-.enlaces {
-  float: right;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .logoProductos {
@@ -167,22 +164,6 @@ h3 {
 .formularioContacto {
   display: flex;
   background-color: rgba(241, 237, 237, 0.897);
-}
-
-@media (max-width: 1160px) {
-  .nombre {
-    font-size: 4.5rem;
-  }
-}
-@media (max-width: 1000px) {
-  .nombre {
-    font-size: 3.9rem;
-  }
-  .logo {
-    width: 30%;
-    height: 90%;
-    margin-left: 10px;
-  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

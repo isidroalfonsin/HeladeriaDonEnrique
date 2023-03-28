@@ -1,3 +1,6 @@
+@import "variables.scss";
+@import "header.scss";
+@import "footer.scss";
 
 @font-face {
     font-family:'Lato';
@@ -14,6 +17,7 @@
     box-sizing: border-box;
 }
 
+
 /*el fondo principal de la pagina*/
 body {
     background-image: url("../assets/img/Background.jpg");
@@ -28,23 +32,25 @@ body {
     height: 100%;
 }
 
-h1{
-    font-family: Pattaya;
-    display: flex;
-    justify-content: center;
-}
-h2{
-    font-family: Pattaya;
+.titulo {
+    font-family: $fontTitulo;
     display: flex;
     justify-content: center;
 }
 
-
-h3{
-    font-family: Pattaya;
-    display: flex;
-    justify-content: center;
+h1 {
+    @extend .titulo;
 }
+
+h2 {
+    @extend .titulo;
+}
+
+h3 {
+    @extend .titulo;
+}
+
+
 /*el contenedor del logo de la asociacion de heladeros*/
 .contenedorLogo{
     display: inline-block;
@@ -52,45 +58,26 @@ h3{
     height: 70%;
     margin-top: 0;
 }
-/*la clase del nombre de la heladeria, iria mas al medio*/
-.nombre{
-    display: inline-block;
-    font-family: Pattaya;
-    font-size: 6rem;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
-}
-/*la clase del logo de la heladeria*/
-.logo{
-    display: inline-block;
-    width: 200px;
-    height: 100%;
-    margin-left: 100px;
-}
-
-.headerNombreyLogo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
 /*el div que contiene las propiedades de la lista de navegacion*/
 
 
 /*cada link de navegacion tiene la clase linkNav*/
+
 .nav-pills{
-    font-family: Pattaya;
+    font-family: $fontTitulo;
     margin: 2%;
     font-size: 1.8rem;
     
 }
 
 .nav-pills .nav-link.active{
-    background-color: rgba(241, 237, 237, 0.897);
+    background-color: $colorBlanco;
 }
 
 
-/*el parrafo de inicio de index, se puede mejorar pero no se me ocurre como*/
+
+/*el parrafo de inicio de index*/
 .parrafoIndex{
     font-family: Lato;
     font-size: 2rem;
@@ -98,10 +85,10 @@ h3{
 }
 
 .parrafoIndexCompleto{
-    background-color: rgba(241, 237, 237, 0.897);
+    background-color: $colorBlanco;
     padding: 10px;
 }
-/*el tamaño de cada uno de los trofeos, la idea es acomodarlo con flexbox y que queden uno al lado del otro */
+/*el tamaño de cada uno de los trofeos */
 
 .trofeosIndex{
     margin: auto;
@@ -116,7 +103,7 @@ h3{
 }
 
 .card{
-    background-color: rgba(241, 237, 237, 0.897);
+    background-color:$colorBlanco;
 }
 .card-img-top{
         width: 75%;
@@ -127,22 +114,6 @@ h3{
     padding: 10px;
 }
 
-
-/*el footer de la frase de abajo*/
-.footer{
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
-    font-family: Pattaya;
-    font-size: 1.2rem;
-
-}
-
-
-/*los enlaces de las redes sociales*/
-.enlaces{
-    float: right;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
-    
-}
 
 .logoProductos{
     display: flex;
@@ -161,7 +132,7 @@ h3{
 
 
 .parrafoSucursales{
-    background-color: rgba(241, 237, 237, 0.897);
+    background-color: $colorBlanco;
     padding: 10px;
     margin-bottom: 20px;
 
@@ -174,25 +145,6 @@ h3{
 }
 .formularioContacto{
     display: flex;
-    background-color: rgba(241, 237, 237, 0.897);
+    background-color: $colorBlanco;
 }
 
-@media (max-width: 1160px) {
-
-    .nombre{
-        font-size: 4.5rem;
-    }
-
-}
-
-@media (max-width: 1000px){
-
-    .nombre{
-        font-size: 3.9rem;
-    }
-    .logo{
-        width: 30%;
-        height: 90%;
-        margin-left: 10px;
-    }
-}

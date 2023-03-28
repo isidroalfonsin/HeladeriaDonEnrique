@@ -1,0 +1,49 @@
+$nombre-y-logo: (
+nombre: (
+    display: inline-block,
+    font-family: $fontTitulo,
+    font-size: 6rem,
+    text-shadow: $sombraTexto
+),
+logo: (
+    display: inline-block,
+    width: 200px,
+    height: 100%,
+    margin-left: 100px
+)
+);
+
+@each $selector, $properties in $nombre-y-logo {
+.#{$selector} {
+    @each $property, $value in $properties {
+    #{$property}: $value;
+    }
+}
+}
+
+.headerNombreyLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1160px) {
+
+    .nombre{
+        font-size: 4.5rem;
+    }
+
+}
+
+@media (max-width: 1000px){
+
+    .nombre{
+        font-size: 3.9rem;
+    }
+    .logo{
+        width: 30%;
+        height: 90%;
+        margin-left: 10px;
+    }
+}
