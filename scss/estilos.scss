@@ -87,6 +87,7 @@ h3 {
 .parrafoIndexCompleto{
     background-color: $colorBlanco;
     padding: 10px;
+    margin-bottom: 10px;
 }
 /*el tamaño de cada uno de los trofeos */
 
@@ -114,6 +115,15 @@ h3 {
     padding: 10px;
 }
 
+.cuadroVideoIndex{
+    display: flex;
+    justify-content: center;
+    background-color: $colorBlanco;
+    padding: 5px;
+    margin-top: 15 auto 15 auto;
+    max-width: 100%;
+}
+
 
 .logoProductos{
     display: flex;
@@ -139,12 +149,13 @@ h3 {
 }
 
 .imagenHistoria{
-    display: flex;
-    height: 50%;
-    justify-content: right;
+    height: 70%;
 }
 .formularioContacto{
     display: flex;
     background-color: $colorBlanco;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
 }
 
