@@ -152,10 +152,24 @@ h3 {
     height: 70%;
 }
 .formularioContacto{
-    display: flex;
     background-color: $colorBlanco;
     margin: auto;
     width: 100%;
     justify-content: center;
 }
 
+#exampleInputComentario1{
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    /* Estilo para inputs y textarea en dispositivos móviles */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        box-sizing: border-box;
+    }
+}
