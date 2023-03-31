@@ -25,6 +25,26 @@
     font-size: 4.5rem;
   }
 }
+.footer {
+  font-family: Pattaya;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.footer .enlaces {
+  float: right;
+}
+
+@media (max-width: 640px) {
+  /* Estilo para inputs y textarea en dispositivos móviles */
+  input[type=text],
+  input[type=email],
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+  }
+}
 @media (max-width: 720px) and (min-width: 570px) {
   /* Ajustes de estilo para este rango de ancho de pantalla */
   .nombre {
@@ -52,15 +72,6 @@
     margin-bottom: 1rem;
   }
 }
-.footer {
-  font-family: Pattaya;
-  font-size: 1.2rem;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-}
-.footer .enlaces {
-  float: right;
-}
-
 @font-face {
   font-family: "Lato";
   src: url(../assets/fonts/Lato-Regular.ttf);
@@ -195,18 +206,6 @@ body {
 
 #exampleInputComentario1 {
   width: 100%;
-}
-
-@media (max-width: 640px) {
-  /* Estilo para inputs y textarea en dispositivos móviles */
-  input[type=text],
-  input[type=email],
-  textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
-  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

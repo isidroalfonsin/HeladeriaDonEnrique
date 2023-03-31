@@ -36,35 +36,3 @@ logo: (
 
 }
 
-@media (max-width: 720px) and (min-width: 570px) {
-    /* Ajustes de estilo para este rango de ancho de pantalla */
-    .nombre {
-        font-size: 2rem;
-        margin-top: 0.5rem;
-    }
-}
-
-
-@media (max-width: 576px) {
-    /* Ajusta el tamaño y la posición del logotipo */
-    .contenedorLogo {
-    max-width: 50%;
-    margin: 0 auto;
-    }
-
-    /* Ajusta el tamaño y la posición del nombre de la heladería */
-    .nombre {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-    }
-
-    /* Ajusta el tamaño y la posición del menú de navegación */
-    .nav {
-    flex-direction: column;
-    align-items: center;
-    }
-
-    .nav-link {
-    margin-bottom: 1rem;
-    }
-}
