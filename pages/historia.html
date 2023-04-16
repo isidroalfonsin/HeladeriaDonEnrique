@@ -9,6 +9,7 @@
         <title>Historia - Helados Don Enrique</title>
         <link rel="shortcut icon" href="../icono.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body class="container-fluid blurred">
@@ -26,11 +27,11 @@
         </div>
         <div>
             <nav class="nav nav-pills nav-fill">
-                <a class="nav-link text-black" href="../index.html">Inicio</a>
-                <a class="nav-link text-dark" href="./productos.html">Productos</a>
-                <a class="nav-link text-dark" href="./sucursales.html">Sucursales</a>
-                <a class="nav-link text-dark active bg-opacity-85" aria-current="page" href="#">Historia</a></a>
-                <a class="nav-link text-dark" href="./contacto.html">Contacto</a>
+                <a class="nav-link text-black" data-aos="zoom-in" data-aos-duration="300" href="../index.html">Inicio</a>
+                <a class="nav-link text-dark" data-aos="zoom-in" data-aos-duration="300" href="./productos.html">Productos</a>
+                <a class="nav-link text-dark" data-aos="zoom-in" data-aos-duration="300" href="./sucursales.html">Sucursales</a>
+                <a class="nav-link text-dark active bg-opacity-85" data-aos="zoom-in" data-aos-duration="300" aria-current="page" href="#">Historia</a></a>
+                <a class="nav-link text-dark" data-aos="zoom-in" data-aos-duration="300" href="./contacto.html">Contacto</a>
                 
             </nav>
                 <div>
@@ -46,9 +47,9 @@
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <div class="imagenHistoria d-flex justify-content-center border border-2 rounded bg-opacity-75 shadow p-3 mb-5 bg-body-tertiary rounded">
-                            <img src="../assets/img/heladeriavieja.jpg" alt="Don Enrique y su carrito en Italia">
+                            <img data-aos="fade-left" src="../assets/img/heladeriavieja.jpg" alt="Don Enrique y su carrito en Italia">
                         </div>
-                    </div>
+                    </div> 
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
@@ -58,7 +59,7 @@
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <div class="imagenHistoria d-flex justify-content-center border border-2 rounded bg-opacity-75 shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="../assets/img/eldiegote.jpg" alt="Diego Armando Maradona">
+                        <img data-aos="fade-left" src="../assets/img/eldiegote.jpg" alt="Diego Armando Maradona">
                     </div>
                 </div>
                 <div class="row">
@@ -69,7 +70,7 @@
                     </div>
                     <div class="col-sm-12 col-md-6">      
                         <div class="imagenHistoria d-flex justify-content-center border border-2 rounded bg-opacity-75 shadow p-3 mb-5 bg-body-tertiary rounded">
-                            <img src="../assets/img/donEnrique.jpg" alt="Don Enrique">
+                            <img data-aos="fade-left" src="../assets/img/donEnrique.jpg" alt="Don Enrique">
                         </div>
                     </div>
                 </div>
@@ -91,6 +92,9 @@
     </div>
 </footer>
 <script src="../js/bootstrap.bundle.min.js"></script>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
 </body>
 </html>

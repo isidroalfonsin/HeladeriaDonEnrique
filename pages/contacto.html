@@ -9,6 +9,7 @@
         <title>Contacto - Helados Don Enrique</title>
         <link rel="shortcut icon" href="../icono.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body class="container-fluid blurred">
@@ -26,11 +27,11 @@
         </div>
         <div>
             <nav class="nav nav-pills nav-fill">
-                <a class="nav-link text-black" href="../index.html">Inicio</a>
-                <a class="nav-link text-dark" href="./productos.html">Productos</a>
-                <a class="nav-link text-dark" href="./sucursales.html">Sucursales</a>
-                <a class="nav-link text-dark" href="./historia.html">Historia</a>
-                <a class="nav-link text-dark active bg-opacity-85" aria-current="page" href="#">Contacto</a>
+                <a class="nav-link text-black" data-aos="zoom-in" data-aos-duration="300" href="../index.html">Inicio</a>
+                <a class="nav-link text-dark" data-aos="zoom-in" data-aos-duration="300" href="./productos.html">Productos</a>
+                <a class="nav-link text-dark" data-aos="zoom-in" data-aos-duration="300" href="./sucursales.html">Sucursales</a>
+                <a class="nav-link text-dark" data-aos="zoom-in" data-aos-duration="300" href="./historia.html">Historia</a>
+                <a class="nav-link text-dark active bg-opacity-85" data-aos="zoom-in" data-aos-duration="300" aria-current="page" href="#">Contacto</a>
                 
             </nav>
                 <div>
@@ -48,21 +49,21 @@
             <div class="row">
                 <div class="col-md-12">
                     <section class="formularioContacto border border-2 rounded bg-opacity-75 text-center">
-                        <form class="row">
+                        <form class="row" action="./404.html">
                             <div class="mb-3">
                                 <label for="exampleInputName1" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="exampleInputName1">
+                                <input type="text" class="form-control" id="exampleInputName1" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                                 <div id="emailHelp" class="form-text">Puede elegir si recibir promociones y ofertas</div>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputComentario1" class="form-label">Comentario</label>
                                 <textarea name="text" id="exampleInputComentario1"  rows="10"></textarea>
                             </div>
-                            <button type="submit" class="btn text-dark active bg-opacity-85 border border-2 rounded">Enviar Comentario</button>
+                            <input type="submit" class="btn text-dark active bg-opacity-85 border border-2 rounded"></input>
                         </form>
                     </section>
                 </div>
@@ -82,6 +83,9 @@
             </div>
         </footer>
         <script src="../js/bootstrap.bundle.min.js"></script>
-        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
 </body>
 </html>
