@@ -9,6 +9,7 @@
         <title>Inicio - Helados Don Enrique</title>
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="shortcut icon" href="./icono.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="./css/estilos.css">
     </head>
     <body class="container-fluid blurred">
@@ -31,11 +32,11 @@
 
     <div class="me-auto mb-2 lg-0 w-100">
     <nav class="nav nav-pills nav-fill">
-        <a class="nav-link active inicio text-black bg-opacity-85" aria-current="page" href="#">Inicio</a>
-        <a class="nav-link text-dark bs-danger-border-subtle" href="./pages/productos.html">Productos</a>
-        <a class="nav-link text-dark" href="./pages/sucursales.html">Sucursales</a>
-        <a class="nav-link text-dark" href="./pages/historia.html">Historia</a>
-        <a class="nav-link text-dark" href="./pages/contacto.html">Contacto</a>
+        <a class="nav-link active inicio text-black bg-opacity-85" data-aos="zoom-in" data-aos-duration="300" aria-current="page" href="#">Inicio</a>
+        <a class="nav-link text-dark bs-danger-border-subtle" data-aos="zoom-in" data-aos-duration="300" href="./pages/productos.html">Productos</a>
+        <a class="nav-link text-dark" data-aos="zoom-in" data-aos-duration="300" href="./pages/sucursales.html">Sucursales</a>
+        <a class="nav-link text-dark" data-aos="zoom-in" data-aos-duration="300" href="./pages/historia.html">Historia</a>
+        <a class="nav-link text-dark" data-aos="zoom-in" data-aos-duration="300" href="./pages/contacto.html">Contacto</a>
     </nav>
     </div>
         </header>
@@ -63,7 +64,7 @@
                     <div class="card border border-2 rounded bg-opacity-75">
                     <img src="./assets/img/trophy2.png" class="card-img-top" alt="Trofeo del helado más natural">
                     <div class="card-body">
-                        <p class="card-text">Trofeo del helado más natural</p>
+                        <p class="card-text">Trofeo del helado más natural.</p>
                     </div>
                     </div>
                 </div>
@@ -79,6 +80,7 @@
             </div>
             </section>
             <div>
+                <h3>6to Campeonato Nacional del Helado Artesanal Argentino 2022</h3>
             <aside class="cuadroVideoIndex border border-2 rounded bg-opacity-75">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/wdTvo-JIk6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></aside>
             </div>
@@ -92,7 +94,7 @@
             <div class="enlaces">
             <a href="https://www.facebook.com" target="_blank">
                 <img src="./assets/img/facebook.png" alt="Facebook de Don Enrique">
-            </a>
+            </a></div>
             <a href="https://www.instagram.com" target="_blank">
                 <img src="./assets/img/instagram.png" alt="Instagram de Don Enrique">
             </a>
@@ -100,5 +102,9 @@
         </footer>
         
         <script src="./js/bootstrap.bundle.min.js"></script>
-    </body>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</body>
 </html>
